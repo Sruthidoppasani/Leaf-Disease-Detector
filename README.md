@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/23489fdb-0f4a-415d-91af-354a39032994
+
 # 🌿 Leaf Disease Detection Flask App
 
 A deep learning-powered web application to detect plant leaf diseases using image classification. This app helps farmers and agriculturists identify potential plant diseases quickly using a simple, intuitive interface.
