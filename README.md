@@ -37,35 +37,37 @@ This project uses a **Convolutional Neural Network (CNN)** built on **MobileNetV
 ```bash
 git clone https://github.com/sruthidoppasani/leaf-disease-detection.git
 cd leaf-disease-detection
-# Leaf-Disease-Detector
-Create a virtual environment
+
 ```
+
+2. **Create a virtual environment**
 ```bash
-##Create a virtual environment
 python -m venv leaf-env
 source leaf-env/bin/activate    # On Windows: leaf-env\\Scripts\\activate
 Install dependencies
 ```
+3. **Install dependencies**
 ```bash
-##Install dependencies
+
 pip install -r requirements.txt
 Prepare your dataset
 ```
+4. **Prepare your dataset**
 ```bash
-##Prepare your dataset
 Place your Dataset/ folder in the root directory, structured like:
 Dataset/
  ├── Tomato_Bacterial_spot/
  ├── Tomato_healthy/
  ├── Potato_Late_blight/
  ...
+```
+5. **Train the model**
 ```bash
-##Train the model
+
 python train_model.py
 ```
+6. **Run the Flask app**
 ```bash
-##Run the Flask app
-
 python app.py
 Then open: http://127.0.0.1:5000
 ```
