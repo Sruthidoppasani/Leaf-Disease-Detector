@@ -39,40 +39,33 @@ git clone https://github.com/sruthidoppasani/leaf-disease-detection.git
 cd leaf-disease-detection
 # Leaf-Disease-Detector
 Create a virtual environment
-
-bash
-Copy
-Edit
+```
+```bash
+##Create a virtual environment
 python -m venv leaf-env
 source leaf-env/bin/activate    # On Windows: leaf-env\\Scripts\\activate
 Install dependencies
-
-bash
-Copy
-Edit
+```
+```bash
+##Install dependencies
 pip install -r requirements.txt
 Prepare your dataset
-
+```
+```bash
+##Prepare your dataset
 Place your Dataset/ folder in the root directory, structured like:
-
-mathematica
-Copy
-Edit
 Dataset/
  ├── Tomato_Bacterial_spot/
  ├── Tomato_healthy/
  ├── Potato_Late_blight/
  ...
-Train the model
-
-bash
-Copy
-Edit
+```bash
+##Train the model
 python train_model.py
-Run the Flask app
+```
+```bash
+##Run the Flask app
 
-bash
-Copy
-Edit
 python app.py
 Then open: http://127.0.0.1:5000
+```
