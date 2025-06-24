@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: url('https://content.sph.harvard.edu/wwwhsph/sites/21/2018/07/fruitveg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #1b4332;
+        }
+
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(4px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .result-box h1 {
+            color: #2d6a4f;
+            margin-bottom: 20px;
+        }
+
+        .result-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .prediction-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>🍂 Prediction Result</h1>
+        <div class="prediction-text">
+            Prediction: <span>{{ prediction }}</span>
+        </div>
+        <img src="{{ image_url }}" alt="Predicted Leaf">
+    </div>
+</body>
+</html>
